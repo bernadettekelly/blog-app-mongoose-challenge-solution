@@ -101,7 +101,7 @@ return chai.request(app)
 	res.body.content.should.equal(newBlogPost.content);
 	res.body.created.should.equal(newBlogPost.created);
 
-});
+}); 
 
 describe('PUT endpoint', function() {
 	it('should update field submitted', function() {
@@ -147,6 +147,7 @@ BlogPosts
 })
 .then(function(_BlogPosts) {
 	should.not.exist(_BlogPosts);
+
 });
 });
 });
